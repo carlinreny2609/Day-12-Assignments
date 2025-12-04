@@ -1,0 +1,33 @@
+package Seleniumpractise;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Testsites {
+
+	public static void main(String[] Args) throws InterruptedException {
+
+		WebDriver driver = new ChromeDriver();
+		
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+
+		driver.get("https://www.saucedemo.com/");
+
+		String Current_url = driver.getCurrentUrl();
+
+		String Title = driver.getTitle();
+
+		String Expected_url = "https://www.saucedemo.com/";
+
+		if ((Current_url).equals(Expected_url)) {
+
+			System.out.println("Pass:You have entered the correct website");
+
+		} else {
+
+			System.out.println("Fail:You have entered the wrong website");
+		}
+}
+}
