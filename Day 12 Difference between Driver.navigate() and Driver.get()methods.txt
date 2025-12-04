@@ -1,0 +1,21 @@
+ Driver.get() Function:
+
+The get() function in used to open a specified URL in the browser. It starts a new browser session and opens a given web address. The URL is given within the brackets which is opened by Selenium. This method initiates a new browser session and loads the desired web page.
+The get function does not support the refresh feature.
+
+Example:driver.get("https://www.saucedemo.com/");
+
+
+
+ Driver.navigate() Function:
+
+It includes functionalities for navigating to a URL, moving back and forth in the browser's history, and refreshing the page.
+The navigate function supports the refresh feature.
+The navigate function does not wait for the webpage to be loaded properly.
+
+Example:driver.navigate("https://www.saucedemo.com/");
+
+Usages:
+driver.navigate().refresh();
+driver.navigate().forward();
+driver.navigate().back();
