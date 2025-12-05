@@ -12,8 +12,6 @@ public class Iphone_6screensize {
 		
 WebDriver driver = new ChromeDriver();
 		
-		JavascriptExecutor js = (JavascriptExecutor) driver;
-
 		driver.get("https://www.saucedemo.com/");
 
 		String Current_url = driver.getCurrentUrl();
